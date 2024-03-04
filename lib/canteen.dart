@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class canteen extends StatelessWidget {
-  const canteen({super.key});
+class Canteen extends StatelessWidget {
+  const Canteen({super.key});
 
   @override
   Widget build(BuildContext context) {

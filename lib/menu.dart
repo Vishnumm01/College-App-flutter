@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, must_be_immutable, unused_local_variable, avoid_print, sort_child_properties_last, avoid_unnecessary_containers, unused_import, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, must_be_immutable, unused_local_variable, avoid_print, sort_child_properties_last, avoid_unnecessary_containers, unused_import, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, camel_case_types
 
 import 'package:flutter/material.dart';
 import 'package:gptc/About.dart';
@@ -167,7 +167,7 @@ class menuscreen extends StatelessWidget {
                     } else if (index == 2) {
                       destinationScreen = courses();
                     } else if (index == 3) {
-                      destinationScreen = canteen();
+                      destinationScreen = Canteen();
                     } else if (index == 4) {
                       destinationScreen = Librarybooks();
                     } else if (index == 5) {
