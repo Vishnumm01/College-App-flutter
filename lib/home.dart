@@ -1,9 +1,10 @@
-// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api, prefer_const_constructors
+// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api, prefer_const_constructors, unused_import, prefer_final_fields
 
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:gptc/signup.dart';
 import 'menu.dart';
+import 'package:gptc/services/firebase_login.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -13,6 +14,8 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   bool _obscureText = true;
 
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,7 +96,8 @@ class _HomepageState extends State<Homepage> {
                   ),
                   prefixIcon: Icon(Icons.lock),
                   suffixIcon: IconButton(
-                    icon: Icon(_obscureText ? Icons.visibility : Icons.visibility_off),
+                    icon: Icon(_obscureText ? Icons.visibility : Icons.visibility_off,
+                    color: _obscureText ? Colors.grey : Color.fromARGB(255, 152, 151, 151),),
                     onPressed: () {
                       setState(() {
                         _obscureText = !_obscureText;
@@ -116,7 +120,7 @@ class _HomepageState extends State<Homepage> {
                   shape: MaterialStateProperty.resolveWith((states) => StadiumBorder()),
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => menuscreen()));
+                  loginActivity(_emailController.text, _passwordController.text, context, menuscreen());
                 },
                 child: Text(
                   'Login',
@@ -130,7 +134,8 @@ class _HomepageState extends State<Homepage> {
             InkWell(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Signup()));
-              },
+             },
+             
               child: RichText(
                 text: TextSpan(
                   text: 'Signup',

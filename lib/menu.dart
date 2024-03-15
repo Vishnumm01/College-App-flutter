@@ -23,9 +23,9 @@ class menuscreen extends StatelessWidget {
   List<Color> buttoncolors = [
     Color.fromARGB(255, 89, 173, 242),
     const Color.fromARGB(255, 113, 205, 116),
-    Color.fromARGB(255, 243, 202, 216),
-    const Color.fromARGB(255, 237, 228, 143),
-    const Color.fromARGB(255, 246, 174, 66),
+    Color.fromARGB(255, 225, 168, 187),
+    Color.fromARGB(255, 194, 183, 85),
+    Color.fromARGB(255, 243, 147, 4),
     Color.fromARGB(255, 99, 232, 190),
 
   ];
@@ -161,7 +161,7 @@ class menuscreen extends StatelessWidget {
                     Widget destinationScreen;
 
                     if (index == 0) {
-                      destinationScreen = Noticeboard();
+                      destinationScreen = NoticeBoard();
                     } else if (index == 1) {
                       destinationScreen = ebooks();
                     } else if (index == 2) {

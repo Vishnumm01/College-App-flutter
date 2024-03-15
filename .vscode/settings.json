@@ -1,3 +1,4 @@
 {
-    "git.enabled": false
+    "git.enabled": false,
+    "cmake.sourceDirectory": "C:/Users/we/Desktop/gptc/linux/flutter"
 }

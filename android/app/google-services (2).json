@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "705940303623",
+    "project_id": "college-app-5008a",
+    "storage_bucket": "college-app-5008a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705940303623:android:832fb0d41aa57b917fdfa2",
+        "android_client_info": {
+          "package_name": "com.android.gptc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-zyZQHoN-8SW9pwJJJmNueoKJZE6M5Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
